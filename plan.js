@@ -5,51 +5,171 @@ const plan = [
             {
                 title: "HTML",
                 concepts: [
-                    'HTML Vocabulary',
-                    'Inline elements',
-                    'Block elements',
-                    'Images',
-                    'Anchors',
-                    'DOCTYPE, html, head, & body',
-                    'Lists',
-                    'Inputs',
-                    'Tables',
-                    'Forms'
+                    {
+                        title: 'HTML Vocabulary',
+                        description: "Do you know what the following words mean?",
+                        questions: [
+                            'element',
+                            'tag',
+                            'tagname',
+                            'content',
+                            'attribute',
+                            'start tag',
+                            'end tag',
+                            'indentation',
+                            'empty/self-closing element'
+                        ]
+                    },
+                    {
+                        title: 'Inline elements',
+                        questions: [
+                            'What is the default width of an inline element?',
+                            'Can inline elements be resized?',
+                            'What are 3 examples of inline elements?'
+                        ]
+                    },
+                    {
+                        title: 'Block elements',
+                        questions: [
+                            'What is the default width of a block element?',
+                            'Can block elements be resized?',
+                            'What are 3 examples of block elements?'
+                        ]
+                    },
+                    {
+                        title: 'Semantic elements',
+                        questions: [
+                            'What are 5 examples of semantic elements?',
+                            'Why should you use semantic elements whenever possible?'
+                        ]
+                    },
+                    {
+                        title: 'Images',
+                        questions: [
+                            'What two attributes should every image element have at least?',
+                            'What are two ways you can resize an image?',
+                            'What is the default size of an image?',
+                            'How can you remove the small space underneath an image?'
+                        ]
+                    },
+                    {
+                        title: 'Anchors',
+                        questions: [
+                            'What attribute is required in an anchor element?',
+                            'What does "href" stand for?',
+                            'How can you create a hyperlink that opens in a new tab?',
+                            'How do you link to an external webpage?',
+                            'How do you link to a local webpage?'
+                        ]
+                    },
+                    {
+                        title: 'DOCTYPE, html, head, & body',
+                        questions: [
+                            "What is VSCode's shortcut for generating HTML 'boilerplate' (starter code)?",
+                            "What's the difference between the head and the body?",
+                            "What's the difference between head, header, and heading?"
+                        ]
+                    },
+                    {
+                        title: 'Lists',
+                        questions: [
+                            'What are the three types of list in HTML?'
+                        ]
+                    },
+                    {
+                        title: 'Inputs'
+                    },
+                    {
+                        title: 'Tables'
+                    },
+                    {
+                        title: 'Forms'
+                    },
                 ]
             },
             {
                 title: "CSS 1",
                 concepts: [
-                    'CSS Vocabulary',
-                    'Inline, embedded, and external CSS',
-                    'Styling text',
-                    'Colors',
-                    'Backgrounds',
-                    'Borders',
-                    'Padding and margin',
-                    'Width and height',
-                    ':hover',
-                    'Float',
-                    'Developer tools',
-                    'Box-sizing',
-                    'Layouts with tables'
+                    {
+                        title: 'CSS Vocabulary'
+                    },
+                    {
+                        title: 'Inline, embedded, and external CSS'
+                    },
+                    {
+                        title: 'Styling text'
+                    },
+                    {
+                        title: 'Colors'
+                    },
+                    {
+                        title: 'Backgrounds'
+                    },
+                    {
+                        title: 'Borders'
+                    },
+                    {
+                        title: 'Padding and margin'
+                    },
+                    {
+                        title: 'Width and height'
+                    },
+                    {
+                        title: ':hover'
+                    },
+                    {
+                        title: 'Float'
+                    },
+                    {
+                        title: 'Developer tools'
+                    },
+                    {
+                        title: 'Box-sizing'
+                    },
+                    {
+                        title: 'Layouts with tables'
+                    },
                 ]
             },
             {
                 title: 'CSS 2',
                 concepts: [
-                    'CSS variables',
-                    'Grid',
-                    'Flex',
-                    'Responsive design',
-                    'Media queries',
-                    'Relative position',
-                    'Absolute position',
-                    'Fixed & sticky position',
-                    'Filter & transform',
-                    'Importing fonts',
-                    'Transitions',
-                    'Animations'
+                    {
+                        title: 'CSS variables'
+                    },
+                    {
+                        title: 'Grid'
+                    },
+                    {
+                        title: 'Flex'
+                    },
+                    {
+                        title: 'Responsive design'
+                    },
+                    {
+                        title: 'Media queries'
+                    },
+                    {
+                        title: 'Relative position'
+                    },
+                    {
+                        title: 'Absolute position'
+                    },
+                    {
+                        title: 'Fixed & sticky position'
+                    },
+                    {
+                        title: 'Filter & transform'
+                    },
+                    {
+                        title: 'Importing fonts'
+                    },
+                    {
+                        title: 'Transitions'
+                    },
+                    {
+                        title: 'Animations'
+                    },
                 ]
             }
         ]
@@ -60,51 +180,121 @@ const plan = [
             {
                 title: 'Javascript 1',
                 concepts: [
-                    'Embedded & external javascript',
-                    'console.log()',
-                    'Data types: number',
-                    'Data types: boolean',
-                    'Data types: string',
-                    'Data types: Array',
-                    'Variables',
-                    'If statements',
-                    'For-loops',
-                    'While-loops',
-                    'Functions',
-                    'Data types: Object',
-                    'Methods',
-                    'Event attributes on HTML Elements'
+                    {
+                        title: 'Embedded & external javascript'
+                    },
+                    {
+                        title: 'console.log()'
+                    },
+                    {
+                        title: 'Data types: number'
+                    },
+                    {
+                        title: 'Data types: boolean'
+                    },
+                    {
+                        title: 'Data types: string'
+                    },
+                    {
+                        title: 'Data types: Array'
+                    },
+                    {
+                        title: 'Variables'
+                    },
+                    {
+                        title: 'If statements'
+                    },
+                    {
+                        title: 'For-loops'
+                    },
+                    {
+                        title: 'While-loops'
+                    },
+                    {
+                        title: 'Functions'
+                    },
+                    {
+                        title: 'Data types: Object'
+                    },
+                    {
+                        title: 'Methods'
+                    },
+                    {
+                        title: 'Event attributes on HTML Elements'
+                    },
                 ]
             },
             {
                 title: 'Javascript 2',
                 concepts: [
-                    'What is the DOM?',
-                    'HTML elements as objects',
-                    'HTMLElement.innerText & HTMLElement.innerHTML',
-                    'HTMLElement.style',
-                    'HTMLElement.classList',
-                    'HTMLElement.getAttribute/setAttribute',
-                    'HTMLElement.addEventListener',
-                    'HTMLInputElements',
-                    'Form handling & form validation',
-                    'document.createElement & HTMLElement.append',
-                    'HTMLElement.insertAdjacentHTML',
-                    'localStorage',
-                    'JSON'
+                    {
+                        title: 'What is the DOM?'
+                    },
+                    {
+                        title: 'HTML elements as objects'
+                    },
+                    {
+                        title: 'HTMLElement.innerText & HTMLElement.innerHTML'
+                    },
+                    {
+                        title: 'HTMLElement.style'
+                    },
+                    {
+                        title: 'HTMLElement.classList'
+                    },
+                    {
+                        title: 'HTMLElement.getAttribute/setAttribute'
+                    },
+                    {
+                        title: 'HTMLElement.addEventListener'
+                    },
+                    {
+                        title: 'HTMLInputElements'
+                    },
+                    {
+                        title: 'Form handling & form validation'
+                    },
+                    {
+                        title: 'document.createElement & HTMLElement.append'
+                    },
+                    {
+                        title: 'HTMLElement.insertAdjacentHTML'
+                    },
+                    {
+                        title: 'localStorage'
+                    },
+                    {
+                        title: 'JSON'
+                    },
                 ]
             },
             {
                 title: 'Javascript 3',
                 concepts: [
-                    'Async functions & Promises',
-                    'Fetch',
-                    'APIs',
-                    'Arrow functions',
-                    'Anonymous functions',
-                    'Array methods',
-                    'Modules',
-                    'Classes / Object Oriented Programming'
+                    {
+                        title: 'Async functions & Promises'
+                    },
+                    {
+                        title: 'Fetch'
+                    },
+                    {
+                        title: 'APIs'
+                    },
+                    {
+                        title: 'Arrow functions'
+                    },
+                    {
+                        title: 'Anonymous functions'
+                    },
+                    {
+                        title: 'Array methods'
+                    },
+                    {
+                        title: 'Modules'
+                    },
+                    {
+                        title: 'Classes / Object Oriented Programming'
+                    },
                 ]
             }
         ]
@@ -115,22 +305,54 @@ const plan = [
             {
                 title: "React",
                 concepts: [
-                    'Creating a React app with Vite',
-                    'React app architecture',
-                    'JSX',
-                    'Functional components',
-                    'Props',
-                    'Conditional rendering',
-                    'Rendering from arrays',
-                    'react-router-dom',
-                    'useState',
-                    'useRef',
-                    'useEffect',
-                    'useContext',
-                    'Other hooks',
-                    'Custom hooks',
-                    'Deploying with Vercel',
-                    'Next.js'
+                    {
+                        title: 'Creating a React app with Vite'
+                    },
+                    {
+                        title: 'React app architecture'
+                    },
+                    {
+                        title: 'JSX'
+                    },
+                    {
+                        title: 'Functional components'
+                    },
+                    {
+                        title: 'Props'
+                    },
+                    {
+                        title: 'Conditional rendering'
+                    },
+                    {
+                        title: 'Rendering from arrays'
+                    },
+                    {
+                        title: 'react-router-dom'
+                    },
+                    {
+                        title: 'useState'
+                    },
+                    {
+                        title: 'useRef'
+                    },
+                    {
+                        title: 'useEffect'
+                    },
+                    {
+                        title: 'useContext'
+                    },
+                    {
+                        title: 'Other hooks'
+                    },
+                    {
+                        title: 'Custom hooks'
+                    },
+                    {
+                        title: 'Deploying with Vercel'
+                    },
+                    {
+                        title: 'Next.js'
+                    },
                 ]
             }
         ]
@@ -141,44 +363,90 @@ const plan = [
             {
                 title: "Node",
                 concepts: [
-                    'package.json and dependencies',
-                    'Modules',
-                    'Built-in module: path',
-                    'Built-in module: fs',
-                    'HTTP basics & creating a server',
-                    'NPM and third-party modules',
+                    {
+                        title: 'package.json and dependencies'
+                    },
+                    {
+                        title: 'Modules'
+                    },
+                    {
+                        title: 'Built-in module: path'
+                    },
+                    {
+                        title: 'Built-in module: fs'
+                    },
+                    {
+                        title: 'HTTP basics & creating a server'
+                    },
+                    {
+                        title: 'NPM and third-party modules'
+                    },
                 ]
             },
             {
                 title: 'Express',
                 concepts: [
-                    'Creating a server using express',
-                    'Defining routes: app.get, app.post, app.put, app.delete',
-                    'Sending a response: res.send, res.sendFile, res.json, res.status',
-                    'Middleware & app.use',
-                    'req.params',
-                    'req.search',
-                    'req.body',
-                    'Routers',
-                    'More on middleware'
+                    {
+                        title: 'Creating a server using express'
+                    },
+                    {
+                        title: 'Defining routes: app.get, app.post, app.put, app.delete'
+                    },
+                    {
+                        title: 'Sending a response: res.send, res.sendFile, res.json, res.status'
+                    },
+                    {
+                        title: 'Middleware & app.use'
+                    },
+                    {
+                        title: 'req.params'
+                    },
+                    {
+                        title: 'req.search'
+                    },
+                    {
+                        title: 'req.body'
+                    },
+                    {
+                        title: 'Routers'
+                    },
+                    {
+                        title: 'More on middleware'
+                    },
                 ]
             },
             {
                 title: 'SQL Databases',
                 concepts: [
-                    'Query builders vs. ORMs',
-                    'SELECT queries',
-                    'INSERT queries',
-                    'UPDATE queries',
-                    'DELETE queries',
-                    'Sequelize'
+                    {
+                        title: 'Query builders vs. ORMs'
+                    },
+                    {
+                        title: 'SELECT queries'
+                    },
+                    {
+                        title: 'INSERT queries'
+                    },
+                    {
+                        title: 'UPDATE queries'
+                    },
+                    {
+                        title: 'DELETE queries'
+                    },
+                    {
+                        title: 'Sequelize'
+                    },
                 ]
             },
             {
                 title: 'MongoDB',
                 concepts: [
-                    'MongoDB Atlas',
-                    'Mongoose'
+                    {
+                        title: 'MongoDB Atlas'
+                    },
+                    {
+                        title: 'Mongoose'
+                    },
                 ]
             }
         ]
@@ -189,12 +457,24 @@ const plan = [
             {
                 title: "Typescript",
                 concepts: [
-                    'Types',
-                    'Union types',
-                    'Function signatures',
-                    'Generics',
-                    'tsconfig',
-                    'jsdoc'
+                    {
+                        title: 'Types'
+                    },
+                    {
+                        title: 'Union types'
+                    },
+                    {
+                        title: 'Function signatures'
+                    },
+                    {
+                        title: 'Generics'
+                    },
+                    {
+                        title: 'tsconfig'
+                    },
+                    {
+                        title: 'jsdoc'
+                    },
                 ]
             }
         ]
