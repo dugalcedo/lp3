@@ -77,13 +77,32 @@ const plan = [
                         ]
                     },
                     {
-                        title: 'Inputs'
+                        title: 'Inputs',
+                        questions: [
+                            'What are 5 types of input?',
+                            'What are 2 elements that behave like inputs, but have a different tagname?',
+                            'How do you create radio buttons?',
+                            'How do you create labels?'
+                        ]
                     },
                     {
-                        title: 'Tables'
+                        title: 'Tables',
+                        questions: [
+                            'What elements are involved in creating an HTML table?',
+                            'How do you define a column in an HTML table?',
+                            'How do you create table cells which span multiple columns and/or rows?',
+                            'What is the difference between a &lt;td&gt; and a &lt;th&gt;?',
+                            'Is a table a block element or inline element?'
+                        ]
                     },
                     {
-                        title: 'Forms'
+                        title: 'Forms',
+                        questions: [
+                            'What does the form action represent?',
+                            'What about the method?',
+                            'What is the default behavior of a form?',
+                            'How do you create a button that does NOT submit the form?'
+                        ]
                     },
                 ]
             },
@@ -91,28 +110,85 @@ const plan = [
                 title: "CSS 1",
                 concepts: [
                     {
-                        title: 'CSS Vocabulary'
+                        title: 'CSS Vocabulary',
+                        description: 'Do you know what the following words mean?',
+                        questions: [
+                            'declaration',
+                            'selector',
+                            'style',
+                            'property',
+                            'value',
+                            'combinator'
+                        ]
                     },
                     {
-                        title: 'Inline, embedded, and external CSS'
+                        title: 'Inline, embedded, and external CSS',
+                        description: 'Do you know how to write CSS the following ways?',
+                        questions: [
+                            'inline',
+                            'embedded',
+                            'external'
+                        ]
                     },
                     {
-                        title: 'Styling text'
+                        title: 'Styling text',
+                        description: 'How can you...',
+                        questions: [
+                            'make text bold?',
+                            'change the color of text?',
+                            'change the font?',
+                            'italicize?',
+                            'underline/remove underline?',
+                            'change size?',
+                            'add shadow?'
+                        ]
                     },
                     {
-                        title: 'Colors'
+                        title: 'Colors',
+                        description: 'Do you know these color formats?',
+                        questions: [
+                            'named HTML colors',
+                            'rgb',
+                            'rgba',
+                            'hex',
+                            'hsl',
+                            'hsla'
+                        ]
                     },
                     {
-                        title: 'Backgrounds'
+                        title: 'Backgrounds',
+                        description: 'Can you create the following backgrounds?',
+                        questions: [
+                            'color',
+                            'image',
+                            'gradient'
+                        ]
                     },
                     {
-                        title: 'Borders'
+                        title: 'Borders',
+                        questions: [
+                            'What three values should you provide when adding a border?',
+                            'How do you round the corners?',
+                            'How can you have different borders on different sides of an element?'
+                        ]
                     },
                     {
-                        title: 'Padding and margin'
+                        title: 'Padding and margin',
+                        questions: [
+                            'What is the difference between padding and margin?',
+                            'What happens when you provide just one value to padding/margin? (e.g. padding: 5px;)',
+                            'Two values?',
+                            'Four?'
+                        ]
                     },
                     {
-                        title: 'Width and height'
+                        title: 'Width and height',
+                        questions: [
+                            `True or false: it's important to always set the height of your elements`,
+                            "True or false: you should never set width without also setting height",
+                            "True or false: the default width of an element is auto",
+                            "True or false: the default height of an element is auto"
+                        ]
                     },
                     {
                         title: ':hover'

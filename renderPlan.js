@@ -10,6 +10,10 @@ globalThis.handleQuestionClick = function(id) {
     openNoteModal(id)
 }
 
+globalThis.toggleChapters = function(div) {
+    div.classList.toggle('hidden')
+}
+
 plan.forEach(renderCourse)
 const colors = ['#794343', 'yellow', 'lime']
 checkRadios()
@@ -19,44 +23,48 @@ colorConcepts()
 function renderCourse(course) {
     planEl.insertAdjacentHTML('beforeend', `
         <div class="course">
-            <h2>${course.title}</h2>
-            ${course.chapters.map(chapter => `
-                <div class="chapter">
-                    <h3>${chapter.title}</h3>
-                    <div className="concepts">
-                        ${chapter.concepts.map(concept => `
-                            <div class="concept  strength-weak" data-id="${chapter.title}|${concept.title}">
-                                <p class="concept-title">${concept.title}</p>
-                                <div class="radios">
-                                    <input onclick="handleRadioClick(this.parentElement.parentElement, 0)" name="${chapter.title}-${concept.title}" type="radio" checked>
-                                    <input onclick="handleRadioClick(this.parentElement.parentElement, 1)" name="${chapter.title}-${concept.title}" type="radio">
-                                    <input onclick="handleRadioClick(this.parentElement.parentElement, 2)" name="${chapter.title}-${concept.title}" type="radio">
+            <h2 onclick="toggleChapters(this.nextElementSibling)">
+                ${course.title}
+            </h2>
+            <div class="chapters hidden">
+                ${course.chapters.map(chapter => `
+                    <div class="chapter">
+                        <h3>${chapter.title}</h3>
+                        <div class="concepts">
+                            ${chapter.concepts.map(concept => `
+                                <div class="concept  strength-weak" data-id="${chapter.title}|${concept.title}">
+                                    <p class="concept-title">${concept.title}</p>
+                                    <div class="radios">
+                                        <input onclick="handleRadioClick(this.parentElement.parentElement, 0)" name="${chapter.title}-${concept.title}" type="radio" checked>
+                                        <input onclick="handleRadioClick(this.parentElement.parentElement, 1)" name="${chapter.title}-${concept.title}" type="radio">
+                                        <input onclick="handleRadioClick(this.parentElement.parentElement, 2)" name="${chapter.title}-${concept.title}" type="radio">
+                                    </div>
+                                    ${!concept.description ? "" : `
+                                        <p class="concept-description">${concept.description}</p>
+                                    `}
+                                    ${!concept.questions ? "" : `
+                                        <ul class="concept-questions">
+                                            ${concept.questions.map((q, qi) => {
+                                                const id = `${chapter.title}|${concept.title}|${qi}`
+                                                return `
+                                                <li>
+                                                    <button
+                                                        data-id="${id}"
+                                                        onclick="handleQuestionClick('${id}')"
+                                                    >
+                                                        ${q}
+                                                    </button>
+                                                </li>
+                                                `
+                                            }).join('')}
+                                        </ul>
+                                    `}
                                 </div>
-                                ${!concept.description ? "" : `
-                                    <p class="concept-description">${concept.description}</p>
-                                `}
-                                ${!concept.questions ? "" : `
-                                    <ul class="concept-questions">
-                                        ${concept.questions.map((q, qi) => {
-                                            const id = `${chapter.title}|${concept.title}|${qi}`
-                                            return `
-                                            <li>
-                                                <button
-                                                    data-id="${id}"
-                                                    onclick="handleQuestionClick('${id}')"
-                                                >
-                                                    ${q}
-                                                </button>
-                                            </li>
-                                            `
-                                        }).join('')}
-                                    </ul>
-                                `}
-                            </div>
-                        `).join('')}
+                            `).join('')}
+                        </div>
                     </div>
-                </div>
-            `).join('')}
+                `).join('')}
+            </div>
         </div>
     `)
 }
@@ -124,4 +132,8 @@ function openNoteModal(id) {
             </div>
         </div>
     `)
+
+    document.querySelector('#note-modal-backdrop').addEventListener('click', e => {
+        if (e.target === e.currentTarget) e.target.remove()
+    })
 }

@@ -29,7 +29,19 @@ h1 {
 }
 
 h2 {
-    text-decoration: underline;;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+}
+
+h3 {
+    border-bottom: 5px solid gray;
+    width: 100%;
+    padding: .5rem;
+    margin: 1rem 0;
 }
 
 .chapter {
@@ -37,6 +49,16 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+
+.hidden {
+    display: none;
+}
+
+.concepts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .concept {
