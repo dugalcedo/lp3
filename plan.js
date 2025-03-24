@@ -194,16 +194,30 @@ const plan = [
                         title: ':hover'
                     },
                     {
-                        title: 'Float'
+                        title: 'Float',
+                        questions: [
+                            `In the HTML, should the floating element come BEFORE or AFTER the static content?`
+                        ]
                     },
                     {
-                        title: 'Developer tools'
+                        title: 'Developer tools',
+                        questions: [
+                            `What are two ways you can select HTML elements from the dev tools?`,
+                            `How do you enable responsive design mode?`,
+                            `How do you change the side of the screen your dev tools are docked on?`,
+                            `What does the "computed" tab of the CSS panel show?`
+                        ]
                     },
                     {
-                        title: 'Box-sizing'
+                        title: 'Box-sizing',
+                        questions: [
+                            `What is the difference between content-box and border-box?`,
+                            `Why is it useful to apply box-sizing: border-box to all elements?`
+                        ]
                     },
                     {
-                        title: 'Layouts with tables'
+                        title: 'Layouts with tables',
+                        description: `Before there was grid and flex, tables were a useful "hack" for creating complex layouts (and are still widely used in email templates).`
                     },
                 ]
             },
@@ -211,13 +225,32 @@ const plan = [
                 title: 'CSS 2',
                 concepts: [
                     {
-                        title: 'CSS variables'
+                        title: 'CSS variables',
+                        questions: [
+                            `Why are CSS variables useful?`
+                        ]
                     },
                     {
-                        title: 'Grid'
+                        title: 'Grid',
+                        questions: [
+                            `Which style do you apply to an element to make it a grid?`,
+                            `How do you define the number of columns in a grid?`,
+                            `True or false: It's important to always define both the number of columns and the number of rows.`,
+                            `True or false: Every child of a grid is a grid-item (as long as it doesn't have display: none;)`,
+                            `How can you make it so a grid item takes up multiple columns/rows?`,
+                            `How can you add space between the grid items?`
+                        ]
                     },
                     {
-                        title: 'Flex'
+                        title: 'Flex',
+                        questions: [
+                            `Which style do you apply to an element to make it a flexbox?`,
+                            `Which is the default flex-direction of a flexbox? Column or row?`,
+                            `In a row, which property controls the HORIZONTAL alignment of the flex items?`,
+                            `In a row, which property controls the VERTICAL alignment of the flex items?`,
+                            `How can you add space between the flex items?`,
+                            `True or false: Only block elements can be flex items`
+                        ]
                     },
                     {
                         title: 'Responsive design'
